@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Aegis LMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-login">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            Aegis LMS
+        </a>
+        <button class="mobile-nav-toggle" id="nav-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="dashboard.html" class="student-only">Dashboard</a></li>
+            <li><a href="enrollments.html" class="student-only">Enrollments</a></li>
+            <li><a href="assignments.html" class="student-only">Assignments</a></li>
+            <li><a href="admin.html" class="admin-only">Admin Control</a></li>
+        </ul>
+        <div class="nav-buttons" id="auth-buttons">
+            <a href="login.html" class="btn btn-secondary active">Login</a>
+            <a href="register.html" class="btn btn-primary">Register</a>
+        </div>
+    </nav>
+
+    <!-- Login Card -->
+    <main class="container">
+        <div class="glass-panel auth-container">
+            <h2 class="auth-title">Welcome Back</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" class="form-control" placeholder="e.g. rahul@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" class="form-control" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group" style="display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" id="login-as-admin" style="cursor: pointer; width: 16px; height: 16px;">
+                    <label for="login-as-admin" style="margin-bottom: 0; cursor: pointer; user-select: none;">Login as Administrator</label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Log In</button>
+                <div class="form-text">
+                    Don't have an account? <a href="register.html">Register here</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Aegis LMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-register">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            Aegis LMS
+        </a>
+        <button class="mobile-nav-toggle" id="nav-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="dashboard.html" class="student-only">Dashboard</a></li>
+            <li><a href="enrollments.html" class="student-only">Enrollments</a></li>
+            <li><a href="assignments.html" class="student-only">Assignments</a></li>
+            <li><a href="admin.html" class="admin-only">Admin Control</a></li>
+        </ul>
+        <div class="nav-buttons" id="auth-buttons">
+            <a href="login.html" class="btn btn-secondary">Login</a>
+            <a href="register.html" class="btn btn-primary active">Register</a>
+        </div>
+    </nav>
+
+    <!-- Registration Card -->
+    <main class="container">
+        <div class="glass-panel auth-container">
+            <h2 class="auth-title">Create Account</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="full_name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="e.g. rahul@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="e.g. 9876543210" required>
+                </div>
+                <div class="form-group">
+                    <label for="qualification">Highest Qualification</label>
+                    <input type="text" id="qualification" class="form-control" placeholder="e.g. B.Tech" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Create password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Sign Up</button>
+                <div class="form-text">
+                    Already have an account? <a href="login.html">Login here</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

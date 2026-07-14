@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Aegis LMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-courses">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            Aegis LMS
+        </a>
+        <button class="mobile-nav-toggle" id="nav-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="dashboard.html" class="student-only">Dashboard</a></li>
+            <li><a href="enrollments.html" class="student-only">Enrollments</a></li>
+            <li><a href="assignments.html" class="student-only">Assignments</a></li>
+            <li><a href="admin.html" class="admin-only">Admin Control</a></li>
+        </ul>
+        <div class="nav-buttons" id="auth-buttons">
+            <!-- Populated dynamically via JS based on login status -->
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container" style="padding: 40px 0;">
+        <h2 class="section-title">Explore Courses</h2>
+
+        <!-- Search & Filter Controls (Bonus Feature) -->
+        <div class="glass-panel filter-bar" style="padding: 20px;">
+            <input type="text" id="course-search" class="form-control filter-input" placeholder="Search by course name or instructor...">
+            <select id="course-category" class="filter-select">
+                <option value="">All Categories</option>
+                <option value="Programming">Programming</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Design">Design</option>
+            </select>
+            <select id="course-level" class="filter-select">
+                <option value="">All Levels</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="courses-grid" id="courses-container">
+            <!-- Loaded dynamically by JS -->
+            <div class="glass-card" style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+                <p style="color: var(--text-secondary);">Loading courses from database...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Enrollment Success/Confirm Modal -->
+    <div class="modal" id="enroll-modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" id="close-enroll-modal">&times;</span>
+            <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 15px; color: var(--accent-blue);" id="modal-course-title">Enroll in Course</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.6;" id="modal-course-desc">Confirm your enrollment. This will add the course to your learning list.</p>
+            <div style="display: flex; gap: 15px; justify-content: flex-end;">
+                <button class="btn btn-secondary" id="cancel-enroll-btn">Cancel</button>
+                <button class="btn btn-primary" id="confirm-enroll-btn">Confirm & Pay</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

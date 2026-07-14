@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis Academy | Learning Management System</title>
+    <meta name="description" content="Manage and explore courses, submit assignments, track progress and earn certifications at Aegis Academy.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-index">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            Aegis LMS
+        </a>
+        <button class="mobile-nav-toggle" id="nav-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="dashboard.html" class="student-only">Dashboard</a></li>
+            <li><a href="enrollments.html" class="student-only">Enrollments</a></li>
+            <li><a href="assignments.html" class="student-only">Assignments</a></li>
+            <li><a href="admin.html" class="admin-only">Admin Control</a></li>
+        </ul>
+        <div class="nav-buttons" id="auth-buttons">
+            <a href="login.html" class="btn btn-secondary">Login</a>
+            <a href="register.html" class="btn btn-primary">Register</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="hero container">
+        <h1>Shape Your Future with <span>Aegis Academy</span></h1>
+        <p>Access high-quality courses designed by industry experts. Track your progress, complete assignments, and earn certifications that boost your career.</p>
+        <div class="hero-actions">
+            <a href="courses.html" class="btn btn-primary" style="padding: 14px 28px; font-size: 16px;">Explore Courses</a>
+            <a href="register.html" class="btn btn-secondary" style="padding: 14px 28px; font-size: 16px;">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Featured Courses Section -->
+    <section class="container" style="padding: 60px 0;">
+        <h2 class="section-title">Featured Courses</h2>
+        <div class="courses-grid" id="featured-courses-container">
+            <!-- Loading state, will be replaced by JS -->
+            <div class="glass-card course-card" style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+                <p style="color: var(--text-secondary);">Connecting to API server and fetching courses...</p>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <a href="courses.html" class="btn btn-secondary">View All Courses</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container glass-panel" style="padding: 60px; margin-bottom: 80px; position: relative; overflow: hidden;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 class="section-title" style="margin-bottom: 25px;">About Aegis Academy</h2>
+            <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                Aegis Academy is a premier learning environment dedicated to providing students with real-world skills. 
+                Our platform streamlines course registration, progress tracking, and evaluations. Whether you're an 
+                instructor wanting to share your knowledge or a student striving to master Python Full Stack development, 
+                our LMS gives you all the tools to succeed.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                <div>
+                    <h3 style="font-size: 32px; color: var(--accent-blue); font-weight: 700;">15+</h3>
+                    <p style="color: var(--text-muted); font-size: 14px;">Expert Instructors</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 32px; color: var(--accent-blue); font-weight: 700;">1200+</h3>
+                    <p style="color: var(--text-muted); font-size: 14px;">Active Learners</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 32px; color: var(--accent-blue); font-weight: 700;">98%</h3>
+                    <p style="color: var(--text-muted); font-size: 14px;">Completion Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px 0; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 14px;">
+        <p>&copy; 2026 Aegis Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
