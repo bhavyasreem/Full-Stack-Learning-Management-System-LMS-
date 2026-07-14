@@ -65,8 +65,8 @@ Ensure you have **Python 3** installed.
 ### 1. Configure Secrets
 The backend connects automatically to MongoDB Atlas using the provided credentials. These are saved in a `.env` file at the root:
 ```env
-MONGO_URI=mongodb+srv://Doremon_12:Dairymilk%400909@cluster0.zx7ka0h.mongodb.net/
-DJANGO_SECRET_KEY=django-insecure-learning-management-system-secret-key-2026
+MONGO_URI=your_URI
+DJANGO_SECRET_KEY=....
 ```
 
 ### 2. Set Up Virtual Environment & Dependencies
@@ -118,11 +118,11 @@ Use these seeded accounts to test different roles in the system:
 
 ### Student Account:
 - **Email**: `rahul@gmail.com`
-- **Password**: `rahul123`
+- **Password**: `....`
 
 ### Administrator Account:
 - **Email**: `admin@aegis.com`
-- **Password**: `admin123`
+- **Password**: `....`
 - *(Check the "Login as Administrator" box on the login screen)*
 
 ---
