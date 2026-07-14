@@ -16,7 +16,7 @@ This application features a **Django REST API** backend interacting directly wit
 ## 💎 Implemented Features & Bonus Items (All Completed)
 
 1. **Course Search & Filter (Bonus)**: Instantly search by name or instructor, and filter by level (Beginner/Intermediate/Advanced) or categories on `courses.html`.
-2. **Student Progress Bar & Completion % (Bonus)**: Dynamically track completion metrics. Students can increment progress by clicking "+ Complete Lesson" in `enrollments.html`.
+2. **Student Progress Bar & Completion % (Bonus)**: Dynamically track completion metrics. Students can increment progress by clicking"+ Complete Lesson" in `enrollments.html`.
 3. **Certificate Generation (PDF) (Bonus)**: Instantly generate and download a custom, styled landscape PDF completion certificate using `html2pdf.js` once progress reaches 100%.
 4. **Responsive Mobile Dashboard (Bonus)**: Fully custom CSS styles with collapsible slide-in sidebar elements for tablets and mobile devices.
 5. **Secure Connection Handling**: MongoDB credentials are kept secure in a `.env` file at the root. The `.env` file is excluded from git tracking using `.gitignore`.
